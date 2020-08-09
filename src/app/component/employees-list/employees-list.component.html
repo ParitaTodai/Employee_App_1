@@ -1,0 +1,44 @@
+<app-emp-count *ngIf="emp" 
+                [all]="getTotalEmployeeCount()" 
+                [male]="getTotalMaleEmployeeCount()"
+                [female]="getTotalFemaleEmployeeCount()" 
+                (onSelectedRadioButton)="onReflectedradioButton($event)">
+</app-emp-count>
+<table>
+
+  <thead>
+    <tr>
+
+      <th>Code </th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Annual Salary</th>
+      <th>Date of Birth</th>
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <ng-container *ngFor="let em of emp">
+
+      <tr *ngIf="reflectedRadioButton=='All' || reflectedRadioButton==em.gender">
+        <td> <a [routerLink]="['/employees',em.code]">
+          {{em.code | uppercase}}</a></td>
+        <td>{{em.name | empModify:em.gender}}</td>
+        <td>{{em.gender}}</td>
+        <td>{{em.annualSalary | currency:'USD':true:'1.3-3'}}</td>
+        <td>{{em.DOB | date:'fullDate'}}</td>
+      </tr>
+    </ng-container>
+        <tr *ngIf="!emp">
+          <td colspan="5">
+            {{statusMsg}}
+          </td>
+        </tr>
+    <tr *ngIf="emp && emp.length==0">
+      <td colspan="5">No list found</td>
+
+    </tr>
+  </tbody>
+
+</table>

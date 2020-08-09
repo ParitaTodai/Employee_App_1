@@ -1,0 +1,50 @@
+<table *ngIf="employee">
+  <thead>
+    <tr>
+      <th colspan="2">
+        Employee details
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Employee Code</td>
+      <td>{{employee[0].code}}</td>
+    </tr>
+    <tr>
+      <td>Employee Name</td>
+      <td>{{employee.name}}</td>
+    </tr>
+    <!-- <tr>
+      <td>Last Name</td>
+      <td>{{lastName}}</td>
+    </tr> -->
+    <tr>
+      <td>Gender</td>
+      <td>{{employee.gender}}</td>
+    </tr>
+    <tr>
+      <td>Annual Salary</td>
+      <td>{{employee.annualSalary}}</td>
+    </tr>
+    <tr>
+      <td>DOB</td>
+      <td>{{employee.DOB}}</td>
+    </tr>
+  </tbody>
+  </table>
+  <div *ngIf="!employee">
+    {{statusMsg}}
+  </div>
+
+
+<!-- 
+  <br/>
+  <button (click)="toggleDetails()">{{showDetails? 'Hide' : 'Show'}} Details</button>
+  <br>
+  <br> -->
+
+  Name : <input [(ngModel)]="name"/>
+  <br/>
+  Copy Mode : {{name}}
