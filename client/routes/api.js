@@ -21,7 +21,7 @@ router.get('/lists/',function(req,res){
            console.log("Erroe retreieving data " + err);
        }
        else {
-           res.json(lists);
+           res.json(lists); 
         //    console.log(lists);
        }
    });
@@ -39,7 +39,7 @@ router.get('/lists/:code/',function(req,res){
             console.log("Erroe retreieving data " + err);
         }
         else {
-            res.json(list);
+            res.json(list[0]);
             // console.log("Data " + list);
         }
     });

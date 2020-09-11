@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab4b"
+  },
+  "code": "emp101",
+  "name": "Tom",
+  "gender": "Male",
+  "annualSalary": 1000,
+  "DOB": "01/25/1995"
+},{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab4c"
+  },
+  "code": "emp102",
+  "name": "Ben",
+  "gender": "Male",
+  "annualSalary": 2000,
+  "DOB": "01/27/1997"
+},{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab4d"
+  },
+  "code": "emp103",
+  "name": "Maria",
+  "gender": "Female",
+  "annualSalary": 1050,
+  "DOB": "12/01/1996"
+},{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab4e"
+  },
+  "code": "emp104",
+  "name": "jiaxin",
+  "gender": "Female",
+  "annualSalary": 2050,
+  "DOB": "02/08/1995"
+},{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab4f"
+  },
+  "code": "emp105",
+  "name": "Grofera",
+  "gender": "Female",
+  "annualSalary": 2057,
+  "DOB": "05/05/1995"
+},{
+  "_id": {
+    "$oid": "5f1b25a0dd185a26689eab50"
+  },
+  "code": "emp106",
+  "name": "Henry",
+  "gender": "Male",
+  "annualSalary": 2056,
+  "DOB": "05/08/1995"
+},{
+  "_id": {
+    "$oid": "5f1b28589362f51864b16357"
+  },
+  "code": "emp107",
+  "name": "Mark",
+  "gender": "Male",
+  "annualSalary": 10000,
+  "DOB": "06/05/1998"
+},{
+  "_id": {
+    "$oid": "5f1b288472cf673ef41b37c0"
+  },
+  "code": "emp108",
+  "name": "Parita",
+  "gender": "Female",
+  "annualSalary": 10000,
+  "DOB": "06/05/1998"
+}]
